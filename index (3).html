@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Colegio de Liga!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Colegio de Liga </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🪐 Repositorio Interactivo de Física – 2° de Bachillerato</title>
+    <style>
+        body {
+            /* Fondo rosado pastel */
+            background-color: #F8BBD0; 
+            /* Letras negras */
+            color: #000000; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #FFFFFF;
+        }
+
+        h1 {
+            color: #4A140C;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #880E4F;
+            margin-top: 0;
+        }
+
+        .contenedor-simuladores {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .simulador-card {
+            width: 45%; 
+            min-width: 300px;
+            background-color: #FFEBEE; 
+            border: 2px solid #E91E63;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .simulador-card h3 {
+            margin: 5px 0 10px 0;
+            color: #D81B60;
+            text-align: center;
+        }
+
+        .simulador-iframe {
+            width: 100%;
+            height: 350px;
+            border: 1px solid #FFC1E3;
+            border-radius: 5px;
+        }
+        
+        .resena {
+            margin-top: 15px;
+            padding: 10px;
+            border-top: 1px dashed #E91E63;
+        }
+        
+        .resena strong {
+            color: #4A148C;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🪐 Repositorio Interactivo de Física – 2° de Bachillerato </h1>
+        <h2>“Solo cuando te equivocas, aprendes; y el miedo solo anuncia que estás por descubrir algo nuevo.”</h2>
+        <h3> 👋 ¡Bienvenidos al Repositorio de Simuladores de Física!
+
+Queridos estudiantes del Colegio de La Liga,
+les damos la bienvenida a este espacio virtual diseñado para explorar los fenómenos físicos de una forma dinámica, visual y divertida.
+.</h3>
+    </header>
+
+    <hr>
+
+    <div class="contenedor-simuladores">
+
+        <div class="simulador-card">
+            <h3>1. Unidad 1 - Tema 1 -Péndulo Simple 🕰️</h3>
+            <iframe 
+                class="simulador-iframe" 
+                src="https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_es.html" 
+                title="Simulador de Péndulo Simple PhET">
+            </iframe>
+            <div class="resena">
+                <strong>¿Para qué es y su funcionalidad?</strong>
+                Permite estudiar el Movimiento Armónico Simple (MAS). Demuestra que el periodo de oscilación depende de la longitud del hilo, pero no de la masa de la pesa.
+                <br><br>
+                <strong>¿Cómo se utiliza?</strong>
+                Ajusta la longitud del hilo y la masa. Puedes iniciar, pausar y medir el periodo usando el cronómetro.
+            </div>
+        </div>
+
+        <div class="simulador-card">
+            <h3>2.  Unidad 1 - Tema 2- Movimiento de Proyectiles (Tiro Parabólico) ⚾</h3>
+            <iframe 
+                class="simulador-iframe" 
+                src="https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_es.html" 
+                title="Simulador de Movimiento de Proyectiles PhET">
+            </iframe>
+            <div class="resena">
+                <strong>¿Para qué es y su funcionalidad?</strong>
+                Sirve para analizar el movimiento en dos dimensiones (2D). Visualiza la trayectoria de un objeto bajo la gravedad.
+                <br><br>
+                <strong>¿Cómo se utiliza?</strong>
+                Ajusta el ángulo y la velocidad inicial. Haz clic en el botón de disparo y utiliza el medidor para determinar el alcance y la altura máxima.
+            </div>
+        </div>
+        
+        <div class="simulador-card">
+            <h3>3.  Unidad 2 - Tema 1- Circuito DC (Corriente Directa) 💡</h3>
+            <iframe 
+                class="simulador-iframe" 
+                src="https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_es.html" 
+                title="Simulador de Circuitos DC PhET">
+            </iframe>
+            <div class="resena">
+                <strong>¿Para qué es y su funcionalidad?</strong>
+                Permite construir y probar circuitos eléctricos simples. Sirve para aplicar la Ley de Ohm V=IR (Voltaje es igual a Intensidad por Resistencia) y entender la relación entre voltaje, corriente y resistencia.
+                <br><br>
+                <strong>¿Cómo se utiliza?</strong>
+                Arrastra componentes (baterías, resistencias) y conéctalos. Utiliza el voltímetro y el amperímetro para medir los valores en el circuito.
+            </div>
+        </div>
+        
+        <div class="simulador-card">
+            <h3>4.  Unidad 2 - Tema 2 -Ley de Coulomb (Fuerza Eléctrica) ⚡</h3>
+            <iframe 
+                class="simulador-iframe" 
+                src="https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law_es.html" 
+                title="Simulador de Ley de Coulomb PhET">
+            </iframe>
+            <div class="resena">
+                <strong>¿Para qué es y su funcionalidad?</strong>
+                Estudia la fuerza de atracción o repulsión entre cargas eléctricas. Permite visualizar cómo la magnitud de las cargas y la distancia afectan la intensidad de la fuerza.
+                <br><br>
+                <strong>¿Cómo se utiliza?</strong>
+                Arrastra las cargas y cambia sus valores. Observa cómo la flecha de fuerza (vector) cambia de tamaño y dirección.
+            </div>
+        </div>
+
+        <div class="simulador-card">
+            <h3>5.  Unidad 3 - Tema 1 -Conservación de la Energía (Pista de Patinaje) ⛸️</h3>
+            <iframe 
+                class="simulador-iframe" 
+                src="https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics_es.html" 
+                title="Simulador de Energía en Pista de Patinaje PhET">
+            </iframe>
+            <div class="resena">
+                <strong>¿Para qué es y su funcionalidad?</strong>
+                Demuestra la conservación de la energía mecánica (cinética y potencial). Visualiza cómo la energía se transforma de potencial (altura) a cinética (velocidad) y viceversa.
+                <br><br>
+                <strong>¿Cómo se utiliza?</strong>
+                Arrastra al patinador a diferentes alturas. Observa los gráficos de energía, viendo cómo la energía potencial se convierte en cinética.
+            </div>
+        </div>
+
+        <div class="simulador-card">
+            <h3>6.  Unidad 3 - Tema 2- Principio de Arquímedes (Flotabilidad) ⛵</h3>
+            <iframe 
+                class="simulador-iframe" 
+                src="https://phet.colorado.edu/sims/html/density/latest/density_es.html" 
+                title="Simulador de Densidad PhET">
+            </iframe>
+            <div class="resena">
+                <strong>¿Para qué es y su funcionalidad?</strong>
+                Estudia el concepto de densidad y la flotabilidad (Principio de Arquímedes). Permite experimentar con diferentes materiales para ver cuándo un objeto flota o se hunde en un líquido.
+                <br><br>
+                <strong>¿Cómo se utiliza?</strong>va cóm
+                Arrastra diferentes bloques al agua. Cambia el material (densidad). Obsero la densidad del objeto determina si flota o se hunde.
+            </div>
+        </div>
+
+        <div class="simulador-card">
+            <h3>7.   Unidad 4 - Tema 2- GeoGebra⚖️</h3>
+            <iframe 
+                class="simulador-iframe" 
+                src="https://www.geogebra.org/m/e8p2u7b8" 
+                title="GeoGebra">
+            </iframe>
+            <div class="resena">
+                <strong>¿Para qué es y su funcionalidad?</strong>
+                GeoGebra es una plataforma digital interactiva para aprender y enseñar matemáticas.Se utiliza para explorar conceptos de geometría, álgebra, cálculo, estadística y más, tanto en educación básica como superior.
+                <br><br>
+                <strong>¿Cómo se utiliza?</strong>
+               Primero inicia sesión y permite crear construcciones dinámicas con puntos, funciones, vectores y figuras, facilitando la visualización y comprensión matemática en tiempo real.
+            </div>
+        </div>
+
+
+        <div class="simulador-card">
+            <h3>8.  Unidad 4 - Tema 2 -Relación Fundamental: Función, Derivada e Integral 📈</h3>
+            <iframe 
+                class="simulador-iframe" 
+                src="https://phet.colorado.edu/sims/html/calculus-grapher/latest/calculus-grapher_es.html" 
+                title="Graficador para Cálculo PhET">
+            </iframe>
+            <div class="resena">
+                <strong>¿Para qué es y su funcionalidad?</strong>
+                El simulador muestra cómo una función se transforma en su derivada (pendiente) y cómo la integral representa el área acumulada bajo la curva. 
+
+                <br><br>
+                <strong>¿Cómo se utiliza?</strong>
+                Ingresa una función y haz clic en "Derivada" o "Integral". Mueve el punto sobre la curva para ver cómo la pendiente y el área acumulada cambian en tiempo real.
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <p style="font-size: 0.8em;">Página diseñada con HTML y CSS. Simuladores incrustados de fuentes educativas externas (principalmente PhET y GeoGebra).</p>
+    </footer>
+
+</body>
+</html>
